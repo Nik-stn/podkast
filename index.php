@@ -1,8 +1,8 @@
 <?php get_header() ?>
     <div class="container">
             <div class="main">
-                <h1 class="main__title">Your Daily <br><span>Podcast</span></h1>
-                <p class="main__description _xs">We cover all kinds of categories and a weekly special guest.</p>
+                <h1 class="main__title"><?php the_field('banner__title'); ?><br><span><?php the_field('banner__title-red'); ?></span></h1>
+                <p class="main__description _xs"><?php the_field('banner__text'); ?></p>
                 <button class="btn-primary">Subscribe</button>
             </div>
             <div class="supported">
