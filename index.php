@@ -34,14 +34,16 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio. </p>
             </div>
         </div>
+        <?php foreach (getFeedBack() as $post): ?> 
         <div class="feedback">
-            <p class="feedback__text">One of the best daily podcasts that covers every topic on Spotify.</p>
+            <p class="feedback__text"><?php echo $post->post_content ?></p>
             <div class="feedback-box">
-                <img src="<?php echo PODKAST_IMG_DIR ?>/feedback/author.png" alt="">
-                <span class="feedback__author">John Smith</span>,
-                <span class="feedback__role">Social Community Manager</span>
+                <?php the_post_thumbnail();?>
+                <span class="feedback__author"><?php echo $post->post_title ?></span>,
+                <span class="feedback__role"><?php echo $post->post_excerpt ?></span>
             </div>
         </div>
+        <?php endforeach; ?> 
     </div>
 </section>
 <section class="page page-bg blog">
