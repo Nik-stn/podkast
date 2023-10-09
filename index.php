@@ -1,24 +1,24 @@
 <?php get_header() ?>
     <div class="container">
-            <div class="main">
-                <h1 class="main__title"><?php the_field('banner__title'); ?><br><span><?php the_field('banner__title-red'); ?></span></h1>
-                <p class="main__description _xs"><?php the_field('banner__text'); ?></p>
-                <button class="btn-primary">Subscribe</button>
+        <div class="main">
+            <h1 class="main__title"><?php the_field('banner__title'); ?><br><span><?php the_field('banner__title-red'); ?></span></h1>
+            <p class="main__description _xs"><?php the_field('banner__text'); ?></p>
+            <button class="btn-primary">Subscribe</button>
+        </div>
+        <div class="supported">
+            <p class="supported__text">Supported by:</p>
+            <div class="supported__list">
+                <a href="#" class="supported__link">
+                    <img src="<?php echo PODKAST_IMG_DIR ?>/supported/spotify.svg" alt="Spotify">
+                </a>
+                <a href="#" class="supported__link">
+                    <img src="<?php echo PODKAST_IMG_DIR ?>/supported/google-podcast.svg" alt="Google Podcast">
+                </a>
+                <a href="#" class="supported__link">
+                    <img src="<?php echo PODKAST_IMG_DIR ?>/supported/youtube.svg" alt="Youtube">
+                </a>
             </div>
-            <div class="supported">
-                <p class="supported__text">Supported by:</p>
-                <div class="supported__list">
-                    <a href="#" class="supported__link">
-                        <img src="<?php echo PODKAST_IMG_DIR ?>/supported/spotify.svg" alt="Spotify">
-                    </a>
-                    <a href="#" class="supported__link">
-                        <img src="<?php echo PODKAST_IMG_DIR ?>/supported/google-podcast.svg" alt="Google Podcast">
-                    </a>
-                    <a href="#" class="supported__link">
-                        <img src="<?php echo PODKAST_IMG_DIR ?>/supported/youtube.svg" alt="Youtube">
-                    </a>
-                </div>
-            </div>
+        </div>
     </div>
 </main>
 <section class="page">
