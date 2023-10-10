@@ -93,31 +93,7 @@
     <div class="container">
         <h2 class="page__title">Get in touch</h2>
         <p class="page__description">Send your message to us</p>
-        <form class="form" action="">
-            <div class="form__item">
-                <label for="" class="form__label">Full name <span>*</span></label>
-                <input type="text" class="form__input" placeholder="Full name">
-            </div>
-            <div class="form__item">
-                <label for="" class="form__label">Email <span>*</span></label>
-                <input type="email" class="form__input" placeholder="johndoe@gmail.com">
-            </div>
-            <div class="form__item">
-                <label for="" class="form__label">Phone <span>*</span></label>
-                <input type="tel" class="form__input" placeholder="Phone">
-            </div>
-            <div class="form__item">
-                <label for="" class="form__label">Subject <span>*</span></label>
-                <input type="tel" class="form__input" placeholder="Subject...">
-            </div>
-            <div class="form__item _100">
-                <label for="" class="form__label">Message <span>*</span></label>
-                <textarea class="form__textarea" placeholder="Your message goes here..."></textarea>
-            </div>
-            <div class="form__btn _100">
-                <button class="btn-primary">Send message</button>
-            </div>
-        </form>
+        <?php echo do_shortcode('[contact-form-7 id="0599aca" title="Форма обратной связи"]'); ?>
     </div>
 </section>
 <?php get_footer() ?>

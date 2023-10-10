@@ -643,6 +643,11 @@ main::before {
     padding-top: 40px;
 }
 
+.form p {
+    margin: 0;
+    padding: 0;
+}
+
 .form__label {
     display: block;
     font-size: 14px;
@@ -680,8 +685,7 @@ main::before {
 }
 
 .form__btn {
-    display: flex;
-    align-items: center;
+    text-align: center;
     margin: 20px;
 }
 
