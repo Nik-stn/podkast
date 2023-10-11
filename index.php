@@ -1,8 +1,8 @@
 <?php get_header() ?>
     <div class="container">
         <div class="main">
-            <h1 class="main__title"><?php the_field('banner__title'); ?><br><span><?php the_field('banner__title-red'); ?></span></h1>
-            <p class="main__description _xs"><?php the_field('banner__text'); ?></p>
+            <h1 class="main__title"><?php the_field('banner__title', 9); ?><br><span><?php the_field('banner__title-red', 9); ?></span></h1>
+            <p class="main__description _xs"><?php the_field('banner__text', 9); ?></p>
             <button class="btn-primary">Subscribe</button>
         </div>
         <div class="supported">

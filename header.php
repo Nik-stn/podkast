@@ -19,7 +19,7 @@
                     <nav>
                         <ul class="header__nav">
                             <li class="header__item"><a href="about.html" class="header__link">About</a></li>
-                            <li class="header__item"><a href="blog.html" class="header__link">Blog</a></li>
+                            <li class="header__item"><a href="https://podkast-me.ru/blog/" class="header__link">Blog</a></li>
                         </ul>
                     </nav>
                     <button class="btn-primary">Subscribe</button>
