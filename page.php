@@ -1,11 +1,24 @@
 <?php get_header() ?>
+        <div class="container">
+            <div class="main">
+                <h1 class="main__title">Article <br>and <span>News</span></h1>
+                <p class="main__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam–quis.</p>
+            </div>
+        </div>
+        <div class="main-blog__search">
+            <form class="form-search">
+                <input type="text" placeholder="Search...">
+                <button type="search"></button>
+            </form>
+        </div>
+    </main>
     <section class="page blog">
         <div class="container">
             <div class="acticle">
                 <article class="article__item">
                     <div>
                         <div class="article__thumb">
-                            <img src="images/thumb/cover-1.png" alt="">
+                            <img src="<?php echo PODKAST_IMG_DIR ?>/thumb/cover-1.png" alt="">
                         </div>
                         <a href="" class="article__category">podcast</a>
                         <h3 class="article__title"><a href="post.html">Setup your own podcast</a></h3>
@@ -23,7 +36,7 @@
                 <article class="article__item">
                     <div>
                         <div class="article__thumb">
-                            <img src="images/thumb/cover-2.png" alt="">
+                            <img src="<?php echo PODKAST_IMG_DIR ?>/thumb/cover-2.png" alt="">
                         </div>
                         <a href="" class="article__category">podcast</a>
                         <h3 class="article__title"><a href="post.html">Doodle Artwork 101</a></h3>
@@ -40,7 +53,7 @@
                 <article class="article__item">
                     <div>
                         <div class="article__thumb">
-                            <img src="images/thumb/cover-3.png" alt="">
+                            <img src="<?php echo PODKAST_IMG_DIR ?>/thumb/cover-3.png" alt="">
                         </div>
                         <a href="" class="article__category">podcast</a>
                         <h3 class="article__title"><a href="post.html">Mother Nature Taking Over</a></h3>
@@ -57,7 +70,7 @@
                 <article class="article__item">
                     <div>
                         <div class="article__thumb">
-                            <img src="images/thumb/cover-4.png" alt="post.html">
+                            <img src="<?php echo PODKAST_IMG_DIR ?>/thumb/cover-4.png" alt="post.html">
                         </div>
                         <a href="" class="article__category">podcast</a>
                         <h3 class="article__title"><a href="">How to Be Productive</a></h3>
