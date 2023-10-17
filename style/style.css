@@ -548,7 +548,7 @@ main::before {
     color: var(--accent);
 }
 
-.article__text {
+.article__item p {
     font-size: 14px;
     font-weight: 500;
     color: var(--light-gray);
