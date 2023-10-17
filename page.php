@@ -5,12 +5,7 @@
                 <p class="main__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam–quis.</p>
             </div>
         </div>
-        <div class="main-blog__search">
-            <form class="form-search">
-                <input type="text" placeholder="Search...">
-                <button type="search"></button>
-            </form>
-        </div>
+        <?php get_sidebar(); ?>
     </main>
     <section class="page blog">
         <div class="container">

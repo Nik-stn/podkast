@@ -598,14 +598,14 @@ main::before {
     margin-right: 20px;
 }
 
-.form-search {
+.main-blog__search form {
     width: 100%;
     max-width: 570px;
     position: relative;
     margin: 0px auto;
 }
 
-.form-search input {
+.main-blog__search form input {
     width: 100%;
     font-size: 16px;
     border: 2px solid var(--dark);
@@ -616,11 +616,11 @@ main::before {
     padding: 24px 24px 24px 88px;
 }
 
-.form-search input:focus {
+.main-blog__search form input:focus {
     box-shadow: rgb(129, 173, 200) 0px 0px 0px 0px;
 }
 
-.form-search button {
+.main-blog__search form button {
     display: block;
     width: 24px;
     height: 24px;
@@ -631,6 +631,7 @@ main::before {
     position: absolute;
     left: 40px;
     top: calc(50% - 12px);
+    margin: 0;
 }
 
 .form {

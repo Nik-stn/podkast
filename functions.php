@@ -50,3 +50,20 @@ function getFeedBack() {
 
 	return get_posts($args);
 }
+
+add_action( 'widgets_init', 'register_my_widgets' );
+function register_my_widgets(){
+
+	register_sidebar( array(
+		'name'          => 'Blog Search',
+		'id'            => "blog-search",
+		'description'   => 'Description',
+		'class'         => '',
+		'before_widget' => '',
+		'after_widget'  => "",
+		'before_title'  => '',
+		'after_title'   => "",
+		'before_sidebar' => '<div class="main-blog__search">', // WP 5.6
+		'after_sidebar'  => '</div>', // WP 5.6
+	) );
+}
