@@ -19,6 +19,7 @@
 
                     foreach( $result as $p ){
                         $thumbnail = get_the_post_thumbnail( $p['ID'], 'full' );
+                        $posttags = get_the_tags($p['ID']);
                         ?>
                         <article class="article__item">
                             <div>
@@ -31,9 +32,13 @@
                             </div>
                             <div class="article__info">
                                 <div class="article__tags">
-                                    <a href="">art</a>
-                                    <a href="">tips and trick</a>
-                                    <a href="">creative</a>
+                                    <?php 
+                                        if( $posttags ){
+                                            foreach( $posttags as $tag ){
+                                                echo '<a href="'.get_tag_link($tag->term_id).'">' . $tag->name . '</a>';
+                                            }
+                                        }
+                                    ?>
                                 </div>
                                 <span class="article__date"><?php $date = date_i18n('M j, Y', strtotime($p['post_date'])); echo $date; ?></span>
                             </div>

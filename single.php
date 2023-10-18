@@ -9,9 +9,7 @@
                     <a href="#" class="main-article__category">tips & tricks</a>
                     <h1 class="main-article__title"><?php the_title(); ?></h1>
                     <div class="main-article__tags">
-                        <a href="#">art</a>
-                        <a href="#">tips and trick</a>
-                        <a href="#">creative</a>
+                        <?php the_tags( '', ''); ?>
                     </div>
                 </div>
             </div>
