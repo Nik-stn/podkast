@@ -20,15 +20,26 @@
                     foreach( $result as $p ){
                         $thumbnail = get_the_post_thumbnail( $p['ID'], 'full' );
                         $posttags = get_the_tags($p['ID']);
+                        $postcategory = get_the_category($p['ID']);
                         ?>
                         <article class="article__item">
                             <div>
                                 <div class="article__thumb">
                                     <?php echo $thumbnail;?>
                                 </div>
-                                <a href="" class="article__category">podcast</a>
+                                <?php 
+                                $links = array_map( function ( $category ) {
+                                    return sprintf(
+                                        '<a href="%s" class="article__category">%s</a>', // Шаблон вывода ссылки
+                                        esc_url( get_category_link( $category ) ), // Ссылка на рубрику
+                                        esc_html( $category->name ) // Название рубрики
+                                    );
+                                }, $postcategory );
+                                
+                                echo implode( ', ', $links );
+                            ?>
                                 <h3 class="article__title"><a href="<?php echo get_permalink($p['ID']) ?>"><?php echo $p['post_title'] ?></a></h3>
-                                <?php echo substr($p['post_content'], 0, 230 )?>
+                                <?php echo substr($p['post_content'], 0, 0 )?>
                             </div>
                             <div class="article__info">
                                 <div class="article__tags">

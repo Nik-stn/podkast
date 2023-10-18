@@ -6,7 +6,9 @@
                     <span class="main-article__date"><?php echo get_the_date('M j, Y'); ?></span>
                 </div>
                 <div class="main-article__info">
-                    <a href="#" class="main-article__category">tips & tricks</a>
+                    <div class="main-article__category">
+                        <?php the_category( ', ', '', ''); ?>
+                    </div>
                     <h1 class="main-article__title"><?php the_title(); ?></h1>
                     <div class="main-article__tags">
                         <?php the_tags( '', ''); ?>

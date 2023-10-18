@@ -1,8 +1,8 @@
 <?php get_header() ?>
         <div class="container">
             <div class="main">
-                <h1 class="main__title">Search <br><span>Result</span></h1>
-                <p class="main__description"><?php the_search_query(); ?></p>
+                <h1 class="main__title">Category <br><span>Result</span></h1>
+                <p class="main__description"><?php if( is_category() ) echo get_queried_object()->name; ?></p>
             </div>
         </div>
         <?php get_sidebar(); ?>
@@ -10,12 +10,15 @@
     <section class="page blog">
         <div class="container">
             <div class="acticle">
-            <?php 
+            <?php
+                $category_slug = get_query_var( 'category_name' ); 
+                $category = get_category_by_slug($category_slug);
+                $category_id = $category->term_id;
                 $args = array(
-                    'orderby' => 'date',
-                    'order' => 'DECS',
-                    's' => get_search_query(  ),
-                    'posts_per_page' => '4',
+                    'post_type' => 'post',
+                    'post_status' => 'publish',
+                    'cat' => $category_id,
+                    'posts_per_page' => '-1',
                 );
                 $query = new WP_Query( $args );
             ?>
@@ -27,17 +30,7 @@
                             <div class="article__thumb">
                                 <?php the_post_thumbnail( large ); ?>
                             </div>
-                            <?php 
-                                $links = array_map( function ( $category ) {
-                                    return sprintf(
-                                        '<a href="%s" class="article__category">%s</a>', // Шаблон вывода ссылки
-                                        esc_url( get_category_link( $category ) ), // Ссылка на рубрику
-                                        esc_html( $category->name ) // Название рубрики
-                                    );
-                                }, get_the_category() );
-                                
-                                echo implode( ', ', $links );
-                            ?>
+                            <a href="" class="article__category">podcast</a>
                             <h3 class="article__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                             <?php
                                 $content = get_the_content();

@@ -30,11 +30,21 @@
                             <div class="article__thumb">
                                 <?php the_post_thumbnail( large ); ?>
                             </div>
-                            <a href="" class="article__category">podcast</a>
+                            <?php 
+                                $links = array_map( function ( $category ) {
+                                    return sprintf(
+                                        '<a href="%s" class="article__category">%s</a>', // Шаблон вывода ссылки
+                                        esc_url( get_category_link( $category ) ), // Ссылка на рубрику
+                                        esc_html( $category->name ) // Название рубрики
+                                    );
+                                }, get_the_category() );
+                                
+                                echo implode( ', ', $links );
+                            ?>
                             <h3 class="article__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                             <?php
                                 $content = get_the_content();
-                                $trimmed_content = substr($content, 0, 230);
+                                $trimmed_content = substr($content, 0, 0);
                                 echo $trimmed_content;
                             ?>
                         </div>
