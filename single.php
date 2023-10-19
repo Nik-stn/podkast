@@ -2,7 +2,7 @@
         <div class="container">
             <div class="main-article">
                 <div class="main-article__top">
-                    <a href="https://podkast-me.ru/blog/" class="main-article__back">Back to articles</a>
+                    <a href="<?php echo get_permalink(26); ?>" class="main-article__back">Back to articles</a>
                     <span class="main-article__date"><?php echo get_the_date('M j, Y'); ?></span>
                 </div>
                 <div class="main-article__info">

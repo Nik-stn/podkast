@@ -13,7 +13,7 @@
         <header>
             <div class="container">
                 <div class="header">
-                    <a href="index.html" class="header-logo">
+                    <a href="<?php echo home_url(); ?>" class="header-logo">
                         <img src="<?php echo PODKAST_IMG_DIR ?>/logo.svg" alt="Logo">
                     </a>
                     <?php 

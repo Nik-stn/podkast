@@ -2,7 +2,7 @@
         <div class="container">
             <div class="footer">
                 <div class="footer__top">
-                    <a href="index.html" class="footer-logo">
+                    <a href="<?php echo home_url(); ?>" class="footer-logo">
                         <img src="<?php echo PODKAST_IMG_DIR ?>/logo.svg" alt="Logo">
                     </a>
                     <div class="footer-platform">
