@@ -67,3 +67,9 @@ function register_my_widgets(){
 		'after_sidebar'  => '</div>', // WP 5.6
 	) );
 }
+
+add_action( 'after_setup_theme', 'main_menu' );
+
+function main_menu() {
+	register_nav_menu( 'primary', 'Main Menu' );
+}

@@ -113,12 +113,12 @@ input:focus {
     gap: 60px;
 }
 
-.header__link {
+.header__nav a{
     color: var(--dark);
     font-weight: 700;
 }
 
-.header__link:hover {
+.header__nav a:hover {
     color: var(--accent);
 }
 
