@@ -15,7 +15,7 @@
                     'orderby' => 'date',
                     'order' => 'DECS',
                     's' => get_search_query(  ),
-                    'posts_per_page' => '4',
+                    'posts_per_page' => '-1',
                 );
                 $query = new WP_Query( $args );
             ?>

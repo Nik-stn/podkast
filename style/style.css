@@ -44,7 +44,7 @@ input:focus {
 
 .btn-primary {
     display: inline-block;
-    margin: 0px auto;
+    margin: 100px auto 0;
     font-size: 14px;
     font-weight: 700;
     color: rgb(255, 255, 255);
@@ -475,13 +475,16 @@ main::before {
     text-align: center;
 }
 
-.acticle {
+.acticle, .article .alm-reveal {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px 20px;
+    text-align: left;
+}
+
+.acticle {
     margin-top: 100px;
     margin-bottom: 100px;
-    text-align: left;
 }
 
 .article__item {
