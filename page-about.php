@@ -7,15 +7,15 @@
         </div>
         <div class="main-about__stat">
             <div class="main-about__item">
-                <p class="main-about__count"><span>76</span>К</p>
+                <p class="main-about__count"><span><?php the_field('сommunity__members', 75); ?></span>К</p>
                 <p class="main-about__title">Community Members</p>
             </div>
             <div class="main-about__item">
-                <p class="main-about__count"><span>128</span>К</p>
+                <p class="main-about__count"><span><?php the_field('podcast__subscribers', 75); ?></span>К</p>
                 <p class="main-about__title">Podcast Subscribers</p>
             </div>
             <div class="main-about__item">
-                <p class="main-about__count"><span>59</span>К</p>
+                <p class="main-about__count"><span><?php the_field('daily__listeners', 75); ?></span>К</p>
                 <p class="main-about__title">Daily Listeners</p>
             </div>
         </div>

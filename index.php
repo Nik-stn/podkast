@@ -27,11 +27,11 @@
         <div class="about-text">
             <div class="about-text__col">
                 <img class="about-text__img" src="<?php echo PODKAST_IMG_DIR ?>/about-icon-01.svg" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio. </p>
+                <p><?php the_field('first__text', 9); ?></p>
             </div>
             <div class="about-text__col">
                 <img class="about-text__img" src="<?php echo PODKAST_IMG_DIR ?>/about-icon-02.svg" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio. </p>
+                <p><?php the_field('second__text', 9); ?></p>
             </div>
         </div>
         <?php foreach (getFeedBack() as $post): ?> 
