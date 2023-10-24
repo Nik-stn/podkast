@@ -482,6 +482,11 @@ main::before {
     text-align: left;
 }
 
+.article {
+    display: grid;
+    gap: 40px 0;
+}
+
 .acticle {
     margin-top: 100px;
     margin-bottom: 100px;
